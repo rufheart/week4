@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="index.css">
         <title>Document</title>
     </head>
@@ -27,13 +28,22 @@
                 </div>
             </div>
             <div class="div-middle">
-                <div class="div-middle-hidden">
+                <div class="div-middle-hidden" style="display: none;">
                     <a href=""><i class="fa-solid fa-ice-cream" style="font-size:30px"></i><span href="">ice-cream</span></a>
                     <a href=""><i class="fa-solid fa-fish" style="font-size:30px"></i><span href="">fish</span></a>
                     <a href=""><i class="fa-solid fa-pizza-slice" style="font-size:30px"></i><span href="">pizza</span></a>
                 </div>
                 <div class="div-middle-seem">
-
+                    <div class="carousel" data-carousel>
+                        <button class="left" onclick="Left()" data-carousel-button="prev"><i class="fa fa-angle-left" style="font-size:36px"></i></button>
+                        <ul data-slides>
+                            <li class="slide" data-active><img src="media/gallery00.jpg" alt=""></li>
+                            <li class="slide"><img src="media/gallery02.jpg" alt=""></li>
+                            <li class="slide"><img src="media/gallery03.jpg" alt=""></li>
+                            <li class="slide"><img src="media/gallery05.jpg" alt=""></li>
+                        </ul>
+                        <button class="right" onclick="Right()" data-carousel-button="next"><i class="fa fa-angle-right" style="font-size:36px"></i></button>
+                    </div>
                 </div>
             </div>
             <div class="div-footer">
@@ -46,8 +56,8 @@
                             Fri: 11:15am - 2:30pm<br>
                             Saturday Closed
                         </p>
-                        <!-- <hr class="visible-xs"> -->
                       </section>
+                      <hr>
                       <section id="address" class="col-sm-4">
                         <span>Address:</span><br>
                         <p>
@@ -57,10 +67,13 @@
                         <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
                         <!-- <hr class="visible-xs"> -->
                       </section>
+                      <hr>
                       <section id="testimonials" class="col-sm-4">
+                        <span></span>
                         <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
                         <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
                       </section>
+                      <hr>
                     </div>
                     <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
                 </div>
